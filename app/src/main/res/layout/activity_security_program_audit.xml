@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SecurityProgramAuditActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="2dp"
+                    android:onClick="back"
+                    android:src="@drawable/letarroww" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center"
+                    android:text="@string/safe"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/rela_animation"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"/>
+        </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/layout_home"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Security Program Audit"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_title"
+                    android:padding="6dp"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="View Security Program Audit"
+                    android:onClick="onViewClick"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="5pt"
+                    android:padding="6dp"
+                    android:id="@+id/text_view_modules"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/location"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border">
+
+                            <Spinner
+                                android:id="@+id/location"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dp"
+                                android:dropDownVerticalOffset="30dp"
+                                android:textSize="@dimen/test_size">
+
+                            </Spinner>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Specific Location"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textview_border">
+
+                            <Spinner
+                                android:id="@+id/specific_location"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dp"
+                                android:dropDownVerticalOffset="30dp"
+                                android:textSize="@dimen/test_size">
+
+                            </Spinner>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/rounded_edittext_blue">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Item"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/rounded_edittext_blue"
+                        android:textSize="14sp"
+                        android:text="Question"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Status"
+                        android:background="@drawable/rounded_edittext_blue"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:id="@+id/text_status"
+                        android:padding="10dp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/list_questions"
+                    ></ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Approved security management procedure is available and implemented?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="2"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is Security Organizational Chart available and updated?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="3"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is adequate number of security workforce available as per Security Management plan?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="4"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Are competent personnel mobilized as security guards and they are well aware about their duties and responsibilities?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="5"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Are there any security breaches reported? &amp; the control measures in place to avoid reoccurrences."
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="6"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is alcohol Test being carried out for Safety critical &amp; Non critical category of workforce?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="7"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is daily security briefings/meetings are conducted with all security guards and recorded?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="8"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is proper access control measures are implanted; a) Photo ID, positive access ID system b) Delivery screening procedures c) Visitor control d) Vehicle pass"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="9"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is key control system in place? A joint key box inventory is conducted by the guard force supervisors when changing shifts. This inventory will be logged onto the supervisor daily activities report?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="10"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is security emergency drills are being carried out and lesson learned are implemented?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="11"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="ID badge and identification system shall be used in identifying and controlling all persons entering the site. The ID badges will include: Recent photo of bearer. Name of bearer. Employee’s number. Company’s name. Date of issue. COMPANY &amp; CONTRACTOR logo."
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="12"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is Material Gate pass system is maintained as per approved procedure?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="13"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Security arrangements Layout is updated regularly whenever any changes?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="14"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is Project Security implementing the Search Programs? Is any record available for random and routine searches?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="15"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is lost and found program implemented?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="16"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is Project Security section conducting regular security patrolling at site premises with dedicated patrolling guards? Records available? Guard patrolling pattern available?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="17"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is patrolling guard equipped with phone, whistle and a flash light during low visibility and night time?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="18"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is all delivery drivers coming from other GCC are mandatorily subjected to alcohol test with breathalyzer prior to entering the HE3 Project Areas?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="19"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is Contractor Security Coordinator maintaining all essential documents to comply with the requirements Sec # 21 security documentation?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="20"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is security coordinator reports Security Program metrics to COMPANY monthly Metrics to include:"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="21"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Are monthly &amp; Yearly security program audits being conducted to verify the compliance?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/rounded_edittext">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="22"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/rounded_edittext"
+                        android:textSize="12sp"
+                        android:onClick="onClic"
+                        android:text="Is Security Gap Analysis being carried out?"
+                        android:padding="10dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_welfare_welness_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welfare and Wellness Audit" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_camp_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camp Audit" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_hse_mgmt_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSE Management System Element Audit" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_high_risk_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High Risk Activity" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_environmental_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Environmental Audit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_audit_subcontractors"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HSES Audit of Subcontractors" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_hear_stress_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heat Stress Audit" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_wase_mgmt_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waste Management Audit" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_security_program_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security Program Audit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_bbs_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BBS Audit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_action_card_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PTST, LMRA &amp; IIF Action Card Audit" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_permit_to_work_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permit to Work Audit" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

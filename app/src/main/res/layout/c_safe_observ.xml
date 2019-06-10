@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_top_observe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Observer" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_new_observation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Observation" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_view_observation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview_view_observation"
+                    android:text="View My Observation" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_observation_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview_obser_for_action"
+                    android:text="Observation for Action" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_observer_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Observation Statistics" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

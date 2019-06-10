@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_confinedspace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/onvinedspace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confined Space Work" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_excavations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Excavations" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_heavy_equipment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heavy Equipment and Vehicle Operations" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_hot_works"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot Works" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:id="@+id/linear_lifting_hoisting"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lifting and Hoisting" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:id="@+id/dropped_object_prevention"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dropped Object Prevention" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_safe_isolation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Safe Isolation of Energy" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_scaffolding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scaffolding and other forms of access" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_simops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simultaneous Operations (SIMOPS)" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_working_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Working at Height" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_house_keeping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Housekeeping" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_line_of_fire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Line of Fire" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_personal_protective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Protective Equipment" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_routine_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Routine Life Tasks" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:id="@+id/linear_barricades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barricades and Open Holes" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

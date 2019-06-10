@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:id="@+id/linear_ca_hse_policies"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                android:layout_width="14dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CA HSE Policies"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+        android:background="#ffff"
+        android:layout_width="match_parent"
+            android:id="@+id/linear_ca_hse_letters"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:background="#ffff"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+
+                android:layout_width="14dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="CA HSE Manuals and Sub Manuals Letters." />
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:id="@+id/linear_ca_hse_procedures"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CA HSE Procedures" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:id="@+id/linear_client_wise_procedure"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffff"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Client wise Procedures" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

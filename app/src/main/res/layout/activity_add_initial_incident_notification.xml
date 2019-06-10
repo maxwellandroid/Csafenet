@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddInitialIncidentNotification">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:onClick="back"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/letarroww" />
+
+                <TextView
+                    android:layout_marginRight="25dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="@string/safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Initial Incident Notification"
+            android:textColor="@color/black"
+            android:id="@+id/text_title"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="ViewInitial Incident Notification"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/text_view_initial_incident_notification"
+            android:textSize="6pt"
+            android:padding="5dp"
+            android:textStyle="bold" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_home"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daate"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/test_size" />
+
+                <TextView
+                    android:id="@+id/datee"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/textview_border"
+                    android:hint="select Date"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/test_size" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/test_size" />
+
+                <TextView
+                    android:id="@+id/edt_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/textview_border"
+                    android:hint="Select Time"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/test_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_border">
+
+                    <Spinner
+                        android:id="@+id/project"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:dropDownVerticalOffset="30dp"
+                        android:textSize="@dimen/test_size">
+
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/test_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_border">
+
+                    <Spinner
+                        android:id="@+id/location"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:dropDownVerticalOffset="30dp"
+                        android:textSize="@dimen/test_size">
+
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="What happened?"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/test_size" />
+
+                <EditText
+                    android:id="@+id/edit_what_happened"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/test_size" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="What actions are going?"
+                    android:textSize="@dimen/test_size" />
+
+                <EditText
+                    android:id="@+id/edit_what_actions_going"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/test_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Immediate Corrective Action Taken "
+                    android:textSize="@dimen/test_size" />
+
+                <EditText
+                    android:id="@+id/edt_imm_corre_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/textview_border"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:textSize="@dimen/test_size" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Select users from below to be notified"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/test_size" />
+
+
+                <TextView
+                    android:id="@+id/selected_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="2dp"
+                    android:text="-Select Action By Persons-"
+                    android:padding="6dp"
+                    android:background="@drawable/textview_border"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/textview_border">
+
+                    <Spinner
+                        android:id="@+id/actionby"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:visibility="gone"
+                        android:dropDownVerticalOffset="30dp"
+                        android:textSize="@dimen/test_size">
+                    </Spinner>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/chooseFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose File"
+                        android:textAllCaps="false"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/image_uri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="No File Chosen"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/test_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+</ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

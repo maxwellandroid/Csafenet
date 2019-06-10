@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewObservationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="back"
+                    android:src="@drawable/letarroww" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center"
+                    android:text="@string/safe"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/layout_top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:id="@+id/text_observation_type"
+                                    android:text="New Observation"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:textSize="8pt" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <EditText
+                                android:id="@+id/edt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:backgroundTint="#e3e3e3"
+                                android:background="@drawable/textview_border"
+                                android:editable="false"
+                                android:paddingLeft="5dp"
+                                android:textSize="@dimen/test_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/employee_no"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <EditText
+                                android:id="@+id/edt_employeeNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/textview_border"
+                                android:editable="false"
+                                android:backgroundTint="#e3e3e3"
+                                android:paddingLeft="5dp"
+                                android:textSize="@dimen/test_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/designation"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <EditText
+                                android:id="@+id/edt_desigantion"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/textview_border"
+                                android:editable="false"
+                                android:backgroundTint="#e3e3e3"
+                                android:paddingLeft="5dp"
+                                android:textSize="@dimen/test_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/company"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/textview_border">
+
+                                <Spinner
+                                    android:id="@+id/spinner_company"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+
+                                    android:dropDownVerticalOffset="10dp"
+                                    android:textSize="@dimen/test_size">
+
+                                </Spinner>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/project"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/textview_border">
+
+                                <Spinner
+                                    android:id="@+id/project"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="35dp"
+                                    android:dropDownVerticalOffset="30dp"
+                                    android:textSize="@dimen/test_size">
+
+                                </Spinner>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/location"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/textview_border">
+
+                                <Spinner
+                                    android:id="@+id/location"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="35dp"
+                                    android:dropDownVerticalOffset="30dp"
+                                    android:textSize="@dimen/test_size">
+
+                                </Spinner>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/safetycategory"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/textview_border">
+
+                                <Spinner
+                                    android:id="@+id/safety_category"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="35dp"
+                                    android:dropDownVerticalOffset="30dp"
+                                    android:textSize="@dimen/test_size">
+
+                                </Spinner>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:id="@+id/layout_safety_ppe">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Personal Protective Equipment ( PPE )"
+                                    android:textColor="@color/white"
+                                    android:padding="10dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:textSize="14sp" />
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="HEAD"
+                                    android:id="@+id/cb_head"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"/>
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="EYES AND FACE"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:id="@+id/cb_eyes_face"
+                                    android:textColor="@color/black"/>
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="EARS"
+                                    android:textStyle="bold"
+                                    android:id="@+id/cb_ears"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"/>
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="BREATHING PROTECTION"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:id="@+id/cb_breathing_protection"
+                                    android:textColor="@color/black"/>
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ARMS AND HANDS"
+                                    android:textStyle="bold"
+                                    android:id="@+id/cb_arms_hands"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"/>
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="BODY"
+                                    android:id="@+id/cb_body"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"/>
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="LEGS AND FEETS"
+                                    android:textStyle="bold"
+                                    android:id="@+id/cb_legs_feet"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:id="@+id/layout_safety_others_description"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Safety Others Description :"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/test_size" />
+
+                                <EditText
+                                    android:id="@+id/edt_saftety_other_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="start"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="@dimen/test_size" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/daate"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <TextView
+                                android:id="@+id/datee"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/textview_border"
+                                android:hint="select Date"
+                                android:padding="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/test_size" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/time"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <TextView
+                                android:id="@+id/edt_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/textview_border"
+                                android:hint="Select Time"
+                                android:padding="5dp"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Type of Observation :"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <RadioGroup
+
+                                android:id="@+id/radio_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/safe_act"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Safe Act"
+                                    android:textSize="@dimen/test_size"/>
+
+                                <RadioButton
+                                    android:id="@+id/safe_condition"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Safe Condition" />
+                                <RadioButton
+                                    android:id="@+id/unsafe_act"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Unsafe Act" />
+
+                                <RadioButton
+                                    android:id="@+id/unsafe_condition"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Unsafe Condition" />
+                                <RadioButton
+                                    android:id="@+id/near_miss"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Near Miss" />
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Risks :"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/linear_risk"
+                                android:orientation="vertical"></LinearLayout>
+                            <GridView
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:numColumns="2"
+                                android:id="@+id/grid_risk"
+                                android:visibility="gone"
+                                android:nestedScrollingEnabled="true"
+                                android:descendantFocusability="blocksDescendants"
+                                android:padding="4dp"></GridView>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone"
+                            android:id="@+id/layout_risk_others_description"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Others Description :"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <EditText
+                                android:id="@+id/edt_risk_other_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/textview_border"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:textSize="@dimen/test_size" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Root Cause :"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/linear_root_cause"
+                                android:orientation="vertical">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/layout_root_cause_others_description"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Others Description :"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <EditText
+                                android:id="@+id/edt_root_cause_other_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/textview_border"
+                                android:gravity="start"
+                                android:paddingLeft="5dp"
+                                android:textSize="@dimen/test_size" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Risks :"
+                                android:textSize="@dimen/test_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_asphyxiation"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Asphyxiation (Chemical etc..)"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_caught_objects"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Caught in or between objects"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:text="Electrocution"
+                                    android:onClick="onCheckboxClicked"
+                                    android:id="@+id/cb_electrocution"
+                                    android:textSize="@dimen/test_size"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Cut By"
+                                    android:id="@+id/cb_cut_by"
+                                    android:padding="4dp"
+                                    android:onClick="onCheckboxClicked"
+                                    android:textSize="@dimen/test_size"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_body_pos"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Ergonomics - Body POS"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_environmental_damage"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Environmental Damage"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_fire_explosion"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Fire / Explosion"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_falling_heights"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Falling / Fall from Heights"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:onClick="onCheckboxClicked"
+                                    android:id="@+id/cb_property_damage"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Property Damage"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_noise_vibration"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Noise / Vibrations"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:onClick="onCheckboxClicked"
+                                    android:id="@+id/cb_strike_object"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Strike agains Objects"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_slips_trips"
+                                    android:text="Slips / Trips / Falls (Same Level)"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:padding="4dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:id="@+id/cb_toxic_effect"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Toxic Effects (Chemical, Etc.)"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:onClick="onCheckboxClicked"
+                                    android:id="@+id/cb_temp_extreams"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Temperature Extremes"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_risk_others"
+                                    android:textSize="@dimen/test_size"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="Other"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Root Cause :"
+                                android:padding="4dp"
+                                android:textSize="@dimen/test_size" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:padding="4dp"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_procedur_not_followed"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Procedures not followed"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_procedure_not_understand"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Procedures not understood"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_preparation"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Preparation"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_selection_workers"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Selection of workers"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_super_vision"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Supervision during work"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_work_environment"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Work Environment"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_no_training"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="No Training"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_training_understood"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Training Understood"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_unsafe_condition"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="In unsafe Condtion"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_no_inspection"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="No Inspection"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_not_available"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Not Available"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_used_incorrectly"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Used Incorrectly"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_wrong_for_the_job"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Wrong for the job"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_coordination"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Coordination"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="2"
+                                android:orientation="horizontal">
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_no_communication"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="No Communication"/>
+                                <CheckBox
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="4dp"
+                                    android:id="@+id/cb_root_cause_others"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Other"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Activity Description :"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/test_size" />
+
+                                <EditText
+                                    android:id="@+id/edt_activity_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="start"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="@dimen/test_size" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:text="Description of (un)safe act/condition :"
+                                    android:textSize="@dimen/test_size" />
+
+                                <EditText
+                                    android:id="@+id/edt_descriptionUnSafeActCondition"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="start"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="@dimen/test_size" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:text="Immediate Corrective Action Taken :"
+                                    android:textSize="@dimen/test_size" />
+
+                                <EditText
+                                    android:id="@+id/edt_imm_corre_action"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="start"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="@dimen/test_size" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:text="Further Recommendation :"
+                                    android:textSize="@dimen/test_size" />
+
+                                <EditText
+                                    android:id="@+id/edt_further_recomondation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:background="@drawable/textview_border"
+                                    android:gravity="start"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="@dimen/test_size" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Action By"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="@dimen/test_size" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/textview_border">
+
+                                    <Spinner
+                                        android:id="@+id/actionby"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="35dp"
+                                        android:dropDownVerticalOffset="30dp"
+                                        android:textSize="@dimen/test_size">
+
+                                    </Spinner>
+                                </LinearLayout>
+
+                                <RadioGroup
+                                    android:id="@+id/close_furtheraction"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="end"
+                                    android:visibility="gone"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radio_button_closed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Closed" />
+
+                                    <RadioButton
+                                        android:id="@+id/radio_button_furtheraction"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                        android:text="Further Action" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:visibility="gone"
+                                android:background="@color/black" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/explaib"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Explain"
+                                    android:textColor="#f90505"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/text_explian"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Explanation"
+                                    android:textSize="@dimen/test_size"
+                                    android:visibility="gone" />
+
+                                <EditText
+                                    android:id="@+id/edit_explain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/textview_border"
+                                    android:paddingLeft="5dp"
+                                    android:textSize="@dimen/test_size"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:visibility="gone"
+                                android:background="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/negative_root"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Root cause(Negative observations)"
+                                    android:textColor="@color/red"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <GridView
+                                    android:id="@+id/gridview2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="350dp"
+                                    android:numColumns="3"></GridView>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:visibility="gone"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/layout_feed_back"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Feedback"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <EditText
+                                android:id="@+id/edit_feed_back"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/textview_border"
+                                android:padding="12dp"
+                                android:textSize="@dimen/test_size" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/layout_satatus"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status :"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/test_size" />
+
+                            <RadioGroup
+                                android:id="@+id/radio_group_status"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/rb_opened"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Opened"
+                                    android:checked="true"
+                                    android:textSize="@dimen/test_size"/>
+
+                                <RadioButton
+                                    android:id="@+id/rb_closed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/test_size"
+                                    android:text="Closed" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/layout_evidence_photos"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Complained Photo "
+                                        android:id="@+id/text_complaind_photo_title"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/test_size" />
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="150dp"
+                                        android:layout_weight="1"
+                                        android:id="@+id/image_evident1"
+                                        android:padding="10dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Evidence Photo "
+                                        android:id="@+id/text_evedent_photo_title"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="@dimen/test_size" />
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="150dp"
+                                        android:layout_weight="1"
+                                        android:id="@+id/image_evident2"
+                                        android:padding="10dp"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Attachment/Supporting document (Image file only)"
+                                    android:textColor="@color/black"
+                                    android:id="@+id/text_file_type_message"
+                                    android:textSize="@dimen/test_size" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/chooseFile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Choose File"
+                                android:textAllCaps="false"
+                                android:paddingLeft="24dp"
+                                android:paddingRight="24dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/image_uri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="No File Chosen"
+                                android:padding="12dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/test_size" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp">
+
+                            <Button
+                                android:id="@+id/submit"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_border"
+                                android:text="Add"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+
+                        <Button
+                            android:id="@+id/next"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_border"
+                            android:text="Next"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

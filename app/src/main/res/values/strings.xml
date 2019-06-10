@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">C-Safenet</string>
+    <string name="safe">C SAFENET- Safety First for Next Generation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="selected_item">Selected item</string>
+    <string name="name">Name </string>
+    <string name="employee_no">Employee No </string>
+    <string name="company">Company </string>
+    <string name="designation">Designation </string>
+    <string name="location">Location</string>
+    <string name="safetycategory">Safety Category</string>
+    <string name="daate">Date</string>
+    <string name="project">Project </string>
+    <string name="time">Time</string>
+    <string name="loading">Loading</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+</resources>

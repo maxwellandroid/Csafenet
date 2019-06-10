@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SecurityManagmentActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="2dp"
+                android:onClick="back"
+                android:src="@drawable/letarroww" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="@string/safe"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rela_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_home"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Security Management"
+            android:textColor="@color/black"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="12sp"
+            android:src="@drawable/securitybanner" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:id="@+id/text_description"
+                    android:padding="6dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:text="Our Security Management Policies"
+                    android:drawableTint="@color/white_copy"
+                    android:drawablePadding="6dp"
+                    android:id="@+id/text_heading1"
+                    android:textColor="@color/white_copy"
+                    android:textSize="14sp"
+                    android:drawableLeft="@drawable/policy"
+                    android:layout_margin="6dp"
+                    android:background="@color/text_background"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:visibility="gone"
+                    android:id="@+id/image_policy"
+                    android:src="@drawable/healthsample"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear_policy"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20sp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Security Management News Letter"
+                        android:textColor="@color/white_copy"
+                        android:background="@color/text_background"
+                        android:textSize="14sp"
+                        android:drawablePadding="6dp"
+                        android:id="@+id/text_heading2"
+                        android:layout_margin="6dp"
+                        android:drawableTint="@color/white_copy"
+                        android:drawableLeft="@drawable/newsletter"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:visibility="gone"
+                        android:text="Test"
+                        android:id="@+id/text_newsletter1"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:id="@+id/text_newsletter2"
+                        android:text="Winter Health"
+                        android:visibility="gone"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="Strokes"
+                        android:visibility="gone"
+                        android:id="@+id/text_newsletter3"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:visibility="gone"
+                        android:text="Smoking Cessation"
+                        android:id="@+id/text_newsletter4"
+                        android:textSize="12sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_news_letter"
+                        android:orientation="vertical"></LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Security Management Alerts"
+                        android:background="@color/text_background"
+                        android:layout_margin="6dp"
+                        android:drawableLeft="@drawable/alerts"
+                        android:textColor="@color/white_copy"
+                        android:drawableTint="@color/white_copy"
+                        android:id="@+id/text_heading3"
+                        android:drawablePadding="6dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:visibility="gone"
+                        android:id="@+id/text_alerts1"
+                        android:text="Strokes"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:visibility="gone"
+                        android:id="@+id/text_alerts2"
+                        android:text="Winter Health"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:visibility="gone"
+                        android:id="@+id/text_alerts3"
+                        android:text="Smoking Control"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:visibility="gone"
+                        android:id="@+id/text_alerts4"
+                        android:text="Winter Health"
+                        android:textSize="12sp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:visibility="gone"
+                        android:text="Strokes"
+                        android:id="@+id/text_alerts5"
+                        android:textSize="12sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_alerts"
+                        android:orientation="vertical"></LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Useful Security Tips"
+                        android:textColor="@color/white_copy"
+                        android:background="@color/text_background"
+                        android:layout_margin="6dp"
+                        android:id="@+id/text_heading4"
+                        android:drawableLeft="@drawable/tips"
+                        android:drawablePadding="6dp"
+                        android:drawableTint="@color/white_copy"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_tips"
+                        android:orientation="vertical"></LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:id="@+id/text_heading5"
+                        android:layout_margin="6dp"
+                        android:drawableLeft="@drawable/keydocument"
+                        android:drawableTint="@color/white_copy"
+                        android:drawablePadding="6dp"
+                        android:text="Key Documentation"
+                        android:textColor="@color/white_copy"
+                        android:background="@color/text_background"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_key_documentation"
+                        android:orientation="vertical"></LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:drawablePadding="6dp"
+                        android:id="@+id/text_heading6"
+                        android:text="Security Risk Assessment"
+                        android:textColor="@color/white_copy"
+                        android:textSize="14sp"
+                        android:drawableTint="@color/white_copy"
+                        android:layout_margin="6dp"
+                        android:drawableLeft="@drawable/register"
+                        android:background="@color/text_background"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_risk"
+                        android:orientation="vertical"></LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_margin="6dp"
+                        android:text="Managing Heat Stress"
+                        android:textColor="@color/white_copy"
+                        android:drawableLeft="@drawable/stress"
+                        android:drawableTint="@color/white_copy"
+                        android:drawablePadding="6dp"
+                        android:id="@+id/text_heading7"
+                        android:background="@color/text_background"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_heat_stress"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

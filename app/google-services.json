@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "489499865328",
+    "firebase_url": "https://c-safenet.firebaseio.com",
+    "project_id": "c-safenet",
+    "storage_bucket": "c-safenet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489499865328:android:c2745f8367b0aa52",
+        "android_client_info": {
+          "package_name": "com.maxwell.csafenet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489499865328-154upm51252i7th4cpj33vodptm95vcr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maxwell.csafenet",
+            "certificate_hash": "f0769205038d897b144a2933fb3e0e5ed5b79d4a"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH1iR7GsHJhJWlihyI7pGuvpzDvJXONxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489499865328-b42h98sjch6fq03q36k4m7v5qaq180au.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

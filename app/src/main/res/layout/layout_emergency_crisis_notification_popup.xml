@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+   >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12sp"
+    android:textSize="12sp"
+    android:textColor="@color/black"
+    android:id="@+id/text_message"
+    android:text="An Emergency has occured in HSE Forms we are currently monitoring the situation. Kindly wait for further instruction."
+    android:gravity="center"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12sp"
+    android:textSize="12sp"
+    android:visibility="gone"
+    android:textColor="@color/black"
+    android:text="The emergency is real please evacute to nearest Mustering Point"
+    android:gravity="center"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12sp"
+    android:textSize="12sp"
+    android:visibility="gone"
+    android:textColor="@color/black"
+    android:text="Kindly ignore the emergency, it is a false alarm."
+    android:gravity="center"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12sp"
+    android:textSize="12sp"
+    android:textColor="@color/black"
+    android:visibility="gone"
+    android:text="Crisis Crisis Crisis - Crisis Management Team is activated Please gather at Meeting point."
+    android:gravity="center"/>
+</LinearLayout>
